@@ -3,12 +3,12 @@ language: cpp
 script:
   - mkdir cmake
   - cd cmake
-  - wget http://www.cmake.org/files/v3.4/cmake-3.4.1.tar.gz 
-  - tar -xvzf cmake-3.4.1.tar.gz 
+  - wget http://www.cmake.org/files/v3.4/cmake-3.4.1.tar.gz &> /dev/null
+  - tar -xvzf cmake-3.4.1.tar.gz &> /dev/null
   - cd cmake-3.4.1/ 
-  - ./configure 
-  - make 
+  - ./configure  &> /dev/null
+  - make &> /dev/null
   - ls
   - cd ..
-  - cmake/cmake .
+  - cmake/bin/cmake .
   # - cmake .
