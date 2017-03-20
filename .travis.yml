@@ -2,8 +2,8 @@ dist: trusty
 language: cpp
 script:
   - wget http://www.cmake.org/files/v3.4/cmake-3.4.3.tar.gz &> /dev/null
-  - tar -xvzf cmake-3.4.1.tar.gz &> /dev/null
-  - cd cmake-3.4.1/ 
+  - tar -xvzf cmake-3.4.3.tar.gz &> /dev/null
+  - cd cmake-3.4.3/ 
   - ./configure  &> /dev/null
   - make &> /dev/null
   - ls -al bin/
@@ -13,5 +13,5 @@ script:
   - git clone http://llvm.org/git/clang.git --branch release_40 --depth 1 tools/clang/
   - mkdir _build
   - cd _build
-  - ../../cmake-3.4.1/bin/cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=X86 ../
+  - ../../cmake-3.4.3/bin/cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=X86 ../
   - make all
