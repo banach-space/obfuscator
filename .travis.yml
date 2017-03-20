@@ -14,6 +14,4 @@ script:
   - mkdir _build
   - cd _build
   - cmake-3.4.1/bin/cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=X86 ../
-  - make
-  - cmake-3.4.1/bin/cmake .
-  # - cmake .
+  - make all
