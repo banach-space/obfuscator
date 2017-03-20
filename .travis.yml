@@ -10,5 +10,5 @@ script:
   - make &> /dev/null
   - ls -al bin/
   - cd ..
-  - cmake/bin/cmake .
+  - cmake-3.4.1/bin/cmake .
   # - cmake .
