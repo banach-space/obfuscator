@@ -13,5 +13,5 @@ script:
   - git clone http://llvm.org/git/clang.git --branch release_40 --depth 1 tools/clang/
   - mkdir _build
   - cd _build
-  - cmake-3.4.1/bin/cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=X86 ../
+  - ../../cmake-3.4.1/bin/cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=X86 ../
   - make all
