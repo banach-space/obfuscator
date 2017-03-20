@@ -8,7 +8,7 @@ script:
   - cd cmake-3.4.1/ 
   - ./configure  &> /dev/null
   - make &> /dev/null
-  - ls bin/
+  - ls -al bin/
   - cd ..
   - cmake/bin/cmake .
   # - cmake .
